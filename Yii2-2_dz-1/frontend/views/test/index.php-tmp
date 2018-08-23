@@ -1,0 +1,66 @@
+
+Warning: PHP Startup: Unable to load dynamic library 'bz2' (tried: \xampp\php\ext\bz2 (Не найден указанный модуль.
+), \xampp\php\ext\php_bz2.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'curl' (tried: \xampp\php\ext\curl (Не найден указанный модуль.
+), \xampp\php\ext\php_curl.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'fileinfo' (tried: \xampp\php\ext\fileinfo (Не найден указанный модуль.
+), \xampp\php\ext\php_fileinfo.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'gd2' (tried: \xampp\php\ext\gd2 (Не найден указанный модуль.
+), \xampp\php\ext\php_gd2.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'gettext' (tried: \xampp\php\ext\gettext (Не найден указанный модуль.
+), \xampp\php\ext\php_gettext.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'mbstring' (tried: \xampp\php\ext\mbstring (Не найден указанный модуль.
+), \xampp\php\ext\php_mbstring.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'exif' (tried: \xampp\php\ext\exif (Не найден указанный модуль.
+), \xampp\php\ext\php_exif.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'mysqli' (tried: \xampp\php\ext\mysqli (Не найден указанный модуль.
+), \xampp\php\ext\php_mysqli.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'pdo_mysql' (tried: \xampp\php\ext\pdo_mysql (Не найден указанный модуль.
+), \xampp\php\ext\php_pdo_mysql.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'pdo_sqlite' (tried: \xampp\php\ext\pdo_sqlite (Не найден указанный модуль.
+), \xampp\php\ext\php_pdo_sqlite.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'php_openssl.dll' (tried: \xampp\php\ext\php_openssl.dll (Не найден указанный модуль.
+), \xampp\php\ext\php_php_openssl.dll.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: PHP Startup: Unable to load dynamic library 'php_ftp.dll' (tried: \xampp\php\ext\php_ftp.dll (Не найден указанный модуль.
+), \xampp\php\ext\php_php_ftp.dll.dll (Не найден указанный модуль.
+)) in Unknown on line 0
+
+Warning: Cannot open '\xampp\php\extras\browscap.ini' for reading in Unknown on line 0
+
+Deprecated: The each() function is deprecated. This message will be suppressed on further calls in C:\Users\РђlleX\AppData\Roaming\Sublime Text 3\Packages\PHPTools\php.tools\codeFormatter.php on line 54
+<?php
+/**
+ * @var $test string with html code app\controllers\TestController
+ * @var $model app\models\Product
+ **/
+?>
+
+<center>
+    <div><h1><?=$hw?></h1></div>
+</center>
+
+<center>
+    <h2><?=$test?></h2>
+</center>
