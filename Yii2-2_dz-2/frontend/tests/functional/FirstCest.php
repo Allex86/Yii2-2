@@ -7,28 +7,32 @@ class FirstCest
 {
     public function _before(FunctionalTester $I)
     {
-        $I->amOnPage(['site/index']);
     }
 
     public function _after(FunctionalTester $I)
     {
     }
 
-    // tests
-    public function tryToTest(FunctionalTester $I)
+    /**
+    * @dataProvider pageProvider
+    */
+    public function tryToTest(FunctionalTester $I, \Codeception\Example $example)
     {
-        $I->grabTextFrom('h1');
-        $I->seeLink('About');
-        $I->click('About');
-        $I->grabTextFrom('h1');
-        $I->seeLink('Contact');
-        $I->click('Contact');
-        $I->grabTextFrom('h1');
-        $I->seeLink('Signup');
-        $I->click('Signup');
-        $I->grabTextFrom('h1');
-        $I->seeLink('Login');
-        $I->click('Login');
-        $I->grabTextFrom('h1');
+        $I->amOnPage($example['url']);
+        $I->see($example['title'], 'h1');
+    }
+
+    /**
+     * @return array
+     */
+    protected function pageProvider()
+    {
+        return [
+            ['url'=>"site/index", 'title'=>"Congratulations!"],
+            ['url'=>"site/about", 'title'=>"About"],
+            ['url'=>"site/contact", 'title'=>"Contact"],
+            ['url'=>"site/signup", 'title'=>"Signup"],
+            ['url'=>"site/login", 'title'=>"Login"]
+        ];
     }
 }
