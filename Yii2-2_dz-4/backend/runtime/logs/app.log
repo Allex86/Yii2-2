@@ -1,0 +1,724 @@
+2018-08-22 15:22:20 [192.168.83.1][-][rtjuqdsaj82m3vp5ta6dh3pl40][error][Error] Error: Class 'backend\controllers\Product_test' not found in /app/backend/controllers/TestController.php:34
+Stack trace:
+#0 [internal function]: backend\controllers\TestController->actionIndex()
+#1 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('test/index', Array)
+#5 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /app/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2018-08-22 15:22:20 [192.168.83.1][-][rtjuqdsaj82m3vp5ta6dh3pl40][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'rtjuqdsaj82m3vp5ta6dh3pl40'
+    '_csrf-backend' => '1303b401380718728457032ae8484542723685d709d0059340d261362735f1e9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f_XK6Y8dbTQXV697Bt-n6_YQQwNEc3ua\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=rtjuqdsaj82m3vp5ta6dh3pl40; _csrf-backend=1303b401380718728457032ae8484542723685d709d0059340d261362735f1e9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f_XK6Y8dbTQXV697Bt-n6_YQQwNEc3ua%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '1566'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/test/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534951339.9522
+    'REQUEST_TIME' => 1534951339
+]
+2018-08-22 15:23:19 [192.168.83.1][-][rtjuqdsaj82m3vp5ta6dh3pl40][error][yii\base\UnknownPropertyException] yii\base\UnknownPropertyException: Getting unknown property: yii\web\Application::test in /app/vendor/yiisoft/yii2/base/Component.php:154
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/di/ServiceLocator.php(77): yii\base\Component->__get('test')
+#1 /app/backend/controllers/TestController.php(44): yii\di\ServiceLocator->__get('test')
+#2 [internal function]: backend\controllers\TestController->actionIndex()
+#3 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#4 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#5 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#6 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('test/index', Array)
+#7 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /app/backend/web/index.php(17): yii\base\Application->run()
+#9 {main}
+2018-08-22 15:23:19 [192.168.83.1][-][rtjuqdsaj82m3vp5ta6dh3pl40][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'rtjuqdsaj82m3vp5ta6dh3pl40'
+    '_csrf-backend' => '1303b401380718728457032ae8484542723685d709d0059340d261362735f1e9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f_XK6Y8dbTQXV697Bt-n6_YQQwNEc3ua\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=rtjuqdsaj82m3vp5ta6dh3pl40; _csrf-backend=1303b401380718728457032ae8484542723685d709d0059340d261362735f1e9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f_XK6Y8dbTQXV697Bt-n6_YQQwNEc3ua%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '1572'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/test/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534951398.9223
+    'REQUEST_TIME' => 1534951398
+]
+2018-08-22 15:24:02 [192.168.83.1][-][rtjuqdsaj82m3vp5ta6dh3pl40][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: model in /app/backend/views/test/index.php:20
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#1 /app/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render()
+#3 /app/backend/controllers/TestController.php(42): yii\base\Controller->render()
+#4 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): backend\controllers\TestController->actionIndex()
+#5 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/app/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams()
+#7 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#8 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#9 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#10 /app/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-08-22 15:24:02 [192.168.83.1][-][rtjuqdsaj82m3vp5ta6dh3pl40][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'rtjuqdsaj82m3vp5ta6dh3pl40'
+    '_csrf-backend' => '1303b401380718728457032ae8484542723685d709d0059340d261362735f1e9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f_XK6Y8dbTQXV697Bt-n6_YQQwNEc3ua\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=rtjuqdsaj82m3vp5ta6dh3pl40; _csrf-backend=1303b401380718728457032ae8484542723685d709d0059340d261362735f1e9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f_XK6Y8dbTQXV697Bt-n6_YQQwNEc3ua%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '1577'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/test/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534951442.1305
+    'REQUEST_TIME' => 1534951442
+]
+2018-08-22 15:24:24 [192.168.83.1][-][rtjuqdsaj82m3vp5ta6dh3pl40][error][yii\base\ErrorException:8] yii\base\ErrorException: Undefined variable: test_service in /app/backend/views/test/index.php:24
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/View.php(257): yii\base\View->renderPhpFile()
+#1 /app/vendor/yiisoft/yii2/base/View.php(156): yii\base\View->renderFile()
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(384): yii\base\View->render()
+#3 /app/backend/controllers/TestController.php(42): yii\base\Controller->render()
+#4 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): backend\controllers\TestController->actionIndex()
+#5 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): ::call_user_func_array:{/app/vendor/yiisoft/yii2/base/InlineAction.php:57}()
+#6 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams()
+#7 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction()
+#8 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction()
+#9 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest()
+#10 /app/backend/web/index.php(17): yii\base\Application->run()
+#11 {main}
+2018-08-22 15:24:24 [192.168.83.1][-][rtjuqdsaj82m3vp5ta6dh3pl40][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'rtjuqdsaj82m3vp5ta6dh3pl40'
+    '_csrf-backend' => '1303b401380718728457032ae8484542723685d709d0059340d261362735f1e9a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"f_XK6Y8dbTQXV697Bt-n6_YQQwNEc3ua\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=rtjuqdsaj82m3vp5ta6dh3pl40; _csrf-backend=1303b401380718728457032ae8484542723685d709d0059340d261362735f1e9a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22f_XK6Y8dbTQXV697Bt-n6_YQQwNEc3ua%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '1577'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/test/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534951463.9412
+    'REQUEST_TIME' => 1534951463
+]
+2018-08-22 17:08:52 [192.168.83.1][1][5om71rd4n4j64em88kga41vs02][error][yii\web\HttpException:404] yii\base\InvalidRouteException: Unable to resolve the request "index". in /app/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('index', Array)
+#1 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 /app/backend/web/index.php(17): yii\base\Application->run()
+#3 {main}
+
+Next yii\web\NotFoundHttpException: Page not found. in /app/vendor/yiisoft/yii2/web/Application.php:115
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 /app/backend/web/index.php(17): yii\base\Application->run()
+#2 {main}
+2018-08-22 17:08:52 [192.168.83.1][1][5om71rd4n4j64em88kga41vs02][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => '5om71rd4n4j64em88kga41vs02'
+    '_csrf-backend' => 'e5fb22f7ddfa2ec2a3db1411696355c7c148517f793a781dc4920f59f4c3a5c3a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"yGSg5d6t_iTDMisdVbFw4meqGEgKSaI4\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=5om71rd4n4j64em88kga41vs02; _csrf-backend=e5fb22f7ddfa2ec2a3db1411696355c7c148517f793a781dc4920f59f4c3a5c3a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22yGSg5d6t_iTDMisdVbFw4meqGEgKSaI4%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '2883'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/index'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1534957731.8159
+    'REQUEST_TIME' => 1534957731
+]
+2018-09-03 05:11:23 [192.168.83.1][-][e7gfsh9d9dl8r42p5cib6gf2o1][error][Error] Error: Class 'common\models\search\TasktSearch' not found in /app/backend/controllers/TaskController.php:38
+Stack trace:
+#0 [internal function]: backend\controllers\TaskController->actionIndex()
+#1 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#4 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('task', Array)
+#5 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /app/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2018-09-03 05:11:23 [192.168.83.1][-][e7gfsh9d9dl8r42p5cib6gf2o1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'e7gfsh9d9dl8r42p5cib6gf2o1'
+    '_csrf-backend' => 'd69785e582cf3431584d1354ccde34a8cc18e022caebc4a85a26cf367737da51a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wf-io6bLidrrhixnM41IbGwYjLYqL2kg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=e7gfsh9d9dl8r42p5cib6gf2o1; _csrf-backend=d69785e582cf3431584d1354ccde34a8cc18e022caebc4a85a26cf367737da51a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wf-io6bLidrrhixnM41IbGwYjLYqL2kg%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '5808'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/task'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535951482.9023
+    'REQUEST_TIME' => 1535951482
+]
+2018-09-03 05:11:28 [192.168.83.1][-][e7gfsh9d9dl8r42p5cib6gf2o1][error][Error] Error: Class 'common\models\search\TasktSearch' not found in /app/backend/controllers/TaskController.php:38
+Stack trace:
+#0 [internal function]: backend\controllers\TaskController->actionIndex()
+#1 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('index', Array)
+#4 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('task/index', Array)
+#5 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /app/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2018-09-03 05:11:27 [192.168.83.1][-][e7gfsh9d9dl8r42p5cib6gf2o1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'e7gfsh9d9dl8r42p5cib6gf2o1'
+    '_csrf-backend' => 'd69785e582cf3431584d1354ccde34a8cc18e022caebc4a85a26cf367737da51a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wf-io6bLidrrhixnM41IbGwYjLYqL2kg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=e7gfsh9d9dl8r42p5cib6gf2o1; _csrf-backend=d69785e582cf3431584d1354ccde34a8cc18e022caebc4a85a26cf367737da51a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wf-io6bLidrrhixnM41IbGwYjLYqL2kg%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '5810'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/tasks'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535951487.517
+    'REQUEST_TIME' => 1535951487
+]
+2018-09-03 05:17:24 [192.168.83.1][-][e7gfsh9d9dl8r42p5cib6gf2o1][error][Error] Error: Class 'common\models\search\TasktSearch' not found in /app/backend/controllers/TaskController.php:38
+Stack trace:
+#0 [internal function]: backend\controllers\TaskController->actionIndex()
+#1 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('', Array)
+#4 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('task', Array)
+#5 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#6 /app/backend/web/index.php(17): yii\base\Application->run()
+#7 {main}
+2018-09-03 05:17:24 [192.168.83.1][-][e7gfsh9d9dl8r42p5cib6gf2o1][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'e7gfsh9d9dl8r42p5cib6gf2o1'
+    '_csrf-backend' => 'd69785e582cf3431584d1354ccde34a8cc18e022caebc4a85a26cf367737da51a:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"wf-io6bLidrrhixnM41IbGwYjLYqL2kg\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=e7gfsh9d9dl8r42p5cib6gf2o1; _csrf-backend=d69785e582cf3431584d1354ccde34a8cc18e022caebc4a85a26cf367737da51a%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%22wf-io6bLidrrhixnM41IbGwYjLYqL2kg%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '5835'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/task'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => ''
+    'CONTENT_TYPE' => ''
+    'REQUEST_METHOD' => 'GET'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535951843.8559
+    'REQUEST_TIME' => 1535951843
+]
+2018-09-03 07:47:26 [192.168.83.1][1][a39ikeot2g7aulrc9pg9230vu7][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'auth_key' doesn't have a default value in /app/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /app/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /app/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /app/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('{{%user}}', Array)
+#4 /app/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /app/backend/controllers/UserController.php(70): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\UserController->actionCreate()
+#8 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#12 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /app/backend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'auth_key' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('Username2', 'Username@2.com', '$2y$13$XEj98WqlWojpK8Kw/GlfouirKUsO2VMGiVjo5BM9eR8dRXdzKKeMu', 10, 1535960846, 1535960846) in /app/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /app/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /app/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /app/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('{{%user}}', Array)
+#4 /app/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /app/backend/controllers/UserController.php(70): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\UserController->actionCreate()
+#8 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#12 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /app/backend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'auth_key' doesn't have a default value
+)
+
+2018-09-03 07:47:25 [192.168.83.1][1][a39ikeot2g7aulrc9pg9230vu7][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'Or-ABw1UvlRLqAkRx6fdiVTnnRynlsvBAJ61C3zFAiUC0eRvRRzWJzube1ShkJrBJNLTZZ_duvhF5OpYFoI3Zw=='
+    'User' => [
+        'username' => 'Username2'
+        'email' => 'Username@2.com'
+        'password' => 'Username2'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'a39ikeot2g7aulrc9pg9230vu7'
+    '_csrf-backend' => '69438786cba0761129796493c00d0578313c6271e6629cd20e5d68e3b135fabda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"8ndhHHhsp3rEf7GHp5Ny8Kq9Ez_SjG5B\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=a39ikeot2g7aulrc9pg9230vu7; _csrf-backend=69438786cba0761129796493c00d0578313c6271e6629cd20e5d68e3b135fabda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%228ndhHHhsp3rEf7GHp5Ny8Kq9Ez_SjG5B%22%3B%7D'
+    'HTTP_CONTENT_LENGTH' => '197'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://y2aa-backend.test/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '7092'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '197'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535960845.3781
+    'REQUEST_TIME' => 1535960845
+]
+2018-09-03 07:50:01 [192.168.83.1][1][a39ikeot2g7aulrc9pg9230vu7][error][yii\db\Exception] PDOException: SQLSTATE[HY000]: General error: 1364 Field 'auth_key' doesn't have a default value in /app/vendor/yiisoft/yii2/db/Command.php:1290
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Command.php(1290): PDOStatement->execute()
+#1 /app/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /app/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /app/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('{{%user}}', Array)
+#4 /app/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /app/backend/controllers/UserController.php(70): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\UserController->actionCreate()
+#8 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#12 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /app/backend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+
+Next yii\db\Exception: SQLSTATE[HY000]: General error: 1364 Field 'auth_key' doesn't have a default value
+The SQL being executed was: INSERT INTO `user` (`username`, `email`, `password_hash`, `status`, `created_at`, `updated_at`) VALUES ('Username2', '', '$2y$13$kFxNL/GPtJZEVXrSo94zX.6OqlE2UFQgp2qoG9fDQpoxGQb8qjIH6', 10, 1535961000, 1535961000) in /app/vendor/yiisoft/yii2/db/Schema.php:664
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/db/Command.php(1295): yii\db\Schema->convertException(Object(PDOException), 'INSERT INTO `us...')
+#1 /app/vendor/yiisoft/yii2/db/Command.php(1091): yii\db\Command->internalExecute('INSERT INTO `us...')
+#2 /app/vendor/yiisoft/yii2/db/Schema.php(433): yii\db\Command->execute()
+#3 /app/vendor/yiisoft/yii2/db/ActiveRecord.php(549): yii\db\Schema->insert('{{%user}}', Array)
+#4 /app/vendor/yiisoft/yii2/db/ActiveRecord.php(515): yii\db\ActiveRecord->insertInternal(NULL)
+#5 /app/vendor/yiisoft/yii2/db/BaseActiveRecord.php(678): yii\db\ActiveRecord->insert(true, NULL)
+#6 /app/backend/controllers/UserController.php(70): yii\db\BaseActiveRecord->save()
+#7 [internal function]: backend\controllers\UserController->actionCreate()
+#8 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#9 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#10 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\base\Controller->runAction('create', Array)
+#11 /app/vendor/yiisoft/yii2/web/Application.php(103): yii\base\Module->runAction('user/create', Array)
+#12 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\web\Application->handleRequest(Object(yii\web\Request))
+#13 /app/backend/web/index.php(17): yii\base\Application->run()
+#14 {main}
+Additional Information:
+Array
+(
+    [0] => HY000
+    [1] => 1364
+    [2] => Field 'auth_key' doesn't have a default value
+)
+
+2018-09-03 07:50:00 [192.168.83.1][1][a39ikeot2g7aulrc9pg9230vu7][info][application] $_GET = []
+
+$_POST = [
+    '_csrf-backend' => 'wLwCpx6neVPBJY1UO4sh6a2k1R77VBpz9xPFLiW33cP40mbPVu8RILEW_xFdvGah3ZGbZ8Mfa0qyaZp9T_DogQ=='
+    'User' => [
+        'username' => 'Username2'
+        'email' => ''
+        'password' => 'Username2'
+    ]
+]
+
+$_FILES = []
+
+$_COOKIE = [
+    'advanced-backend' => 'a39ikeot2g7aulrc9pg9230vu7'
+    '_csrf-backend' => '69438786cba0761129796493c00d0578313c6271e6629cd20e5d68e3b135fabda:2:{i:0;s:13:\"_csrf-backend\";i:1;s:32:\"8ndhHHhsp3rEf7GHp5Ny8Kq9Ez_SjG5B\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'vagrant'
+    'HOME' => '/home/vagrant'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_DNT' => '1'
+    'HTTP_COOKIE' => 'advanced-backend=a39ikeot2g7aulrc9pg9230vu7; _csrf-backend=69438786cba0761129796493c00d0578313c6271e6629cd20e5d68e3b135fabda%3A2%3A%7Bi%3A0%3Bs%3A13%3A%22_csrf-backend%22%3Bi%3A1%3Bs%3A32%3A%228ndhHHhsp3rEf7GHp5Ny8Kq9Ez_SjG5B%22%3B%7D'
+    'HTTP_CONTENT_LENGTH' => '181'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://y2aa-backend.test/user/create'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'ru-RU,ru;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; Win64; x64; rv:61.0) Gecko/20100101 Firefox/61.0'
+    'HTTP_HOST' => 'y2aa-backend.test'
+    'SCRIPT_FILENAME' => '/app/backend/web/index.php'
+    'REDIRECT_STATUS' => '200'
+    'SERVER_NAME' => 'y2aa-backend.test'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '192.168.83.137'
+    'REMOTE_PORT' => '7105'
+    'REMOTE_ADDR' => '192.168.83.1'
+    'SERVER_SOFTWARE' => 'nginx/1.10.3'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REQUEST_SCHEME' => 'http'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'DOCUMENT_ROOT' => '/app/backend/web'
+    'DOCUMENT_URI' => '/index.php'
+    'REQUEST_URI' => '/user/create'
+    'SCRIPT_NAME' => '/index.php'
+    'CONTENT_LENGTH' => '181'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'REQUEST_METHOD' => 'POST'
+    'QUERY_STRING' => ''
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1535961000.1428
+    'REQUEST_TIME' => 1535961000
+]
