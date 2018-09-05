@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Contact</title>
+    <meta name="csrf-param" content="_csrf-frontend">
+    <meta name="csrf-token" content="JMzz8apDmziI_HBesxZg-R1zOlzc3QopV3rGMZF_VaRtjbLG8ySjf9q3GDGEfySLegRROujuUFwOFJduxyYmnA==">
+
+<link href="/assets/2cb2d721/css/bootstrap.css" rel="stylesheet">
+<link href="/css/site.css" rel="stylesheet"></head>
+<body>
+
+<div class="wrap">
+    <nav id="w6" class="navbar-inverse navbar-fixed-top navbar"><div class="container"><div class="navbar-header"><button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#w6-collapse"><span class="sr-only">Toggle navigation</span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span></button><a class="navbar-brand" href="/index-test.php">My Application</a></div><div id="w6-collapse" class="collapse navbar-collapse"><ul id="w7" class="navbar-nav navbar-right nav"><li><a href="/index-test.php/site/index">Home</a></li>
+<li><a href="/index-test.php/site/about">About</a></li>
+<li class="active"><a href="/index-test.php/site/contact">Contact</a></li>
+<li><a href="/index-test.php/site/signup">Signup</a></li>
+<li><a href="/index-test.php/site/login">Login</a></li></ul></div></div></nav>
+    <div class="container">
+        <ul class="breadcrumb"><li><a href="/index-test.php">Home</a></li>
+<li class="active">About</li>
+<li class="active">Contact</li>
+</ul>                <div class="site-contact">
+    <h1>Contact</h1>
+
+    <p>
+        If you have business inquiries or other questions, please fill out the following form to contact us. Thank you.
+    </p>
+
+    <div class="row">
+        <div class="col-lg-5">
+            <form id="contact-form" action="/index-test.php/site/contact" method="post">
+<input type="hidden" name="_csrf-frontend" value="JMzz8apDmziI_HBesxZg-R1zOlzc3QopV3rGMZF_VaRtjbLG8ySjf9q3GDGEfySLegRROujuUFwOFJduxyYmnA==">
+                <div class="form-group field-contactform-name required">
+<label class="control-label" for="contactform-name">Name</label>
+<input type="text" id="contactform-name" class="form-control" name="ContactForm[name]" autofocus aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>
+                <div class="form-group field-contactform-email required">
+<label class="control-label" for="contactform-email">Email</label>
+<input type="text" id="contactform-email" class="form-control" name="ContactForm[email]" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>
+                <div class="form-group field-contactform-subject required">
+<label class="control-label" for="contactform-subject">Subject</label>
+<input type="text" id="contactform-subject" class="form-control" name="ContactForm[subject]" aria-required="true">
+
+<p class="help-block help-block-error"></p>
+</div>
+                <div class="form-group field-contactform-body required">
+<label class="control-label" for="contactform-body">Body</label>
+<textarea id="contactform-body" class="form-control" name="ContactForm[body]" rows="6" aria-required="true"></textarea>
+
+<p class="help-block help-block-error"></p>
+</div>
+                <div class="form-group field-contactform-verifycode">
+<label class="control-label" for="contactform-verifycode">Verification Code</label>
+<div class="row"><div class="col-lg-3"><img id="contactform-verifycode-image" src="/index-test.php/site/captcha?v=5b834fc417c213.65112955" alt=""></div><div class="col-lg-6"><input type="text" id="contactform-verifycode" class="form-control" name="ContactForm[verifyCode]"></div></div>
+
+<p class="help-block help-block-error"></p>
+</div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" name="contact-button">Submit</button>                </div>
+
+            </form>        </div>
+    </div>
+
+</div>
+    </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <p class="pull-left">&copy; My Application 2018</p>
+
+        <p class="pull-right">Powered by <a href="http://www.yiiframework.com/" rel="external">Yii Framework</a></p>
+    </div>
+</footer>
+
+<script src="/assets/c5ff94d2/jquery.js"></script>
+<script src="/assets/b73d7253/yii.js"></script>
+<script src="/assets/b73d7253/yii.validation.js"></script>
+<script src="/assets/b73d7253/yii.captcha.js"></script>
+<script src="/assets/b73d7253/yii.activeForm.js"></script>
+<script src="/assets/2cb2d721/js/bootstrap.js"></script>
+<script>jQuery(function ($) {
+jQuery('#contactform-verifycode-image').yiiCaptcha({"refreshUrl":"\/index-test.php\/site\/captcha?refresh=1","hashKey":"yiiCaptcha\/site\/captcha"});
+jQuery('#contact-form').yiiActiveForm([{"id":"contactform-name","name":"name","container":".field-contactform-name","input":"#contactform-name","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Name cannot be blank."});}},{"id":"contactform-email","name":"email","container":".field-contactform-email","input":"#contactform-email","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Email cannot be blank."});yii.validation.email(value, messages, {"pattern":/^[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?$/,"fullPattern":/^[^@]*<[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?>$/,"allowName":false,"message":"Email is not a valid email address.","enableIDN":false,"skipOnEmpty":1});}},{"id":"contactform-subject","name":"subject","container":".field-contactform-subject","input":"#contactform-subject","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Subject cannot be blank."});}},{"id":"contactform-body","name":"body","container":".field-contactform-body","input":"#contactform-body","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.required(value, messages, {"message":"Body cannot be blank."});}},{"id":"contactform-verifycode","name":"verifyCode","container":".field-contactform-verifycode","input":"#contactform-verifycode","error":".help-block.help-block-error","validate":function (attribute, value, messages, deferred, $form) {yii.validation.captcha(value, messages, {"hash":658,"hashKey":"yiiCaptcha/site/captcha","caseSensitive":false,"message":"The verification code is incorrect."});}}], []);
+});</script></body>
+</html>

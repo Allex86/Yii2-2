@@ -1,0 +1,1045 @@
+2018-08-22 17:05:20 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#8 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#19 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: could not find driver in D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#17 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-08-22 17:05:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534950320.0095
+    'REQUEST_TIME' => 1534950320
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-22 17:05:20 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Cannot open '\xampp\php\extras\browscap.ini' for reading in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-22 17:05:20 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534950320.0095
+    'REQUEST_TIME' => 1534950320
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-22 17:06:45 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Cannot open '\xampp\php\extras\browscap.ini' for reading in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-22 17:06:45 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534950405.3295
+    'REQUEST_TIME' => 1534950405
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    ]
+    'argc' => 1
+]
+2018-08-22 17:07:19 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#8 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('up', Array)
+#18 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('up', Array)
+#19 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#20 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#21 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: could not find driver in D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('up', Array)
+#16 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('up', Array)
+#17 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate/up', Array)
+#18 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate/up', Array)
+#19 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-08-22 17:07:19 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534950439.1675
+    'REQUEST_TIME' => 1534950439
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2018-08-22 17:07:19 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Cannot open '\xampp\php\extras\browscap.ini' for reading in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-22 17:07:19 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534950439.1675
+    'REQUEST_TIME' => 1534950439
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+        1 => 'migrate/up'
+    ]
+    'argc' => 2
+]
+2018-08-22 17:07:34 [-][-][-][error][yii\db\Exception] PDOException: could not find driver in D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php:687
+Stack trace:
+#0 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(687): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(613): yii\db\Connection->createPdoInstance()
+#2 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#3 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#4 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#5 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#6 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#7 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#8 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#9 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#10 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#11 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#12 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#13 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#14 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#15 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#16 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#17 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#18 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#19 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#20 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#21 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#22 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\yii(23): yii\base\Application->run()
+#23 {main}
+
+Next yii\db\Exception: could not find driver in D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php:624
+Stack trace:
+#0 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(996): yii\db\Connection->open()
+#1 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Connection.php(983): yii\db\Connection->getMasterPdo()
+#2 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(253): yii\db\Connection->getSlavePdo()
+#3 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(1153): yii\db\Command->prepare(true)
+#4 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Command.php(399): yii\db\Command->queryInternal('fetchAll', NULL)
+#5 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(312): yii\db\Command->queryAll()
+#6 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(125): yii\db\mysql\Schema->findColumns(Object(yii\db\TableSchema))
+#7 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(744): yii\db\mysql\Schema->loadTableSchema('migration')
+#8 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\db\Schema.php(194): yii\db\Schema->getTableMetadata('{{%migration}}', 'schema', true)
+#9 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\MigrateController.php(210): yii\db\Schema->getTableSchema('{{%migration}}', true)
+#10 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(875): yii\console\controllers\MigrateController->getMigrationHistory(NULL)
+#11 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\controllers\BaseMigrateController.php(166): yii\console\controllers\BaseMigrateController->getNewMigrations()
+#12 [internal function]: yii\console\controllers\BaseMigrateController->actionUp(0)
+#13 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#14 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#15 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#16 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#17 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('migrate', Array)
+#18 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('migrate', Array)
+#19 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#20 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\yii(23): yii\base\Application->run()
+#21 {main}
+Additional Information:
+
+2018-08-22 17:07:34 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534950454.1025
+    'REQUEST_TIME' => 1534950454
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-22 17:07:34 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Cannot open '\xampp\php\extras\browscap.ini' for reading in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-22 17:07:34 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534950454.1025
+    'REQUEST_TIME' => 1534950454
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+        1 => 'migrate'
+    ]
+    'argc' => 2
+]
+2018-08-22 17:07:38 [-][-][-][error][yii\base\ErrorException:32] yii\base\ErrorException: Cannot open '\xampp\php\extras\browscap.ini' for reading in Unknown:0
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleFatalError()
+#1 {main}
+2018-08-22 17:07:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534950457.83
+    'REQUEST_TIME' => 1534950457
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    ]
+    'argc' => 1
+]
+2018-08-22 16:34:21 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "greatings". in /app/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('greatings', Array)
+#1 /app/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('greatings', Array)
+#2 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /app/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "greatings". in /app/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('greatings', Array)
+#1 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /app/yii(23): yii\base\Application->run()
+#3 {main}
+2018-08-22 16:34:21 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '8'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 2472 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'MAIL' => '/var/mail/vagrant'
+    'PATH' => '/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'PWD' => '/app'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LANGUAGE' => 'en_US:'
+    'LOGNAME' => 'vagrant'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 2472 10.0.2.15 22'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/vagrant'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534955661.058
+    'REQUEST_TIME' => 1534955661
+    'argv' => [
+        0 => 'yii'
+        1 => 'greatings'
+    ]
+    'argc' => 2
+]
+2018-08-22 16:34:30 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "Greatings". in /app/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('Greatings', Array)
+#1 /app/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('Greatings', Array)
+#2 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /app/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "Greatings". in /app/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('Greatings', Array)
+#1 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /app/yii(23): yii\base\Application->run()
+#3 {main}
+2018-08-22 16:34:30 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '8'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 2472 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'MAIL' => '/var/mail/vagrant'
+    'PATH' => '/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'PWD' => '/app'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LANGUAGE' => 'en_US:'
+    'LOGNAME' => 'vagrant'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 2472 10.0.2.15 22'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/vagrant'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534955670.8902
+    'REQUEST_TIME' => 1534955670
+    'argv' => [
+        0 => 'yii'
+        1 => 'Greatings'
+    ]
+    'argc' => 2
+]
+2018-08-22 16:34:44 [-][-][-][error][yii\console\UnknownCommandException] yii\base\InvalidRouteException: Unable to resolve the request "consoleGreatings". in /app/vendor/yiisoft/yii2/base/Module.php:537
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('consoleGreating...', Array)
+#1 /app/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('consoleGreating...', Array)
+#2 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#3 /app/yii(23): yii\base\Application->run()
+#4 {main}
+
+Next yii\console\UnknownCommandException: Unknown command "consoleGreatings". in /app/vendor/yiisoft/yii2/console/Application.php:183
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('consoleGreating...', Array)
+#1 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#2 /app/yii(23): yii\base\Application->run()
+#3 {main}
+2018-08-22 16:34:44 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '8'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 2472 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'MAIL' => '/var/mail/vagrant'
+    'PATH' => '/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'PWD' => '/app'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LANGUAGE' => 'en_US:'
+    'LOGNAME' => 'vagrant'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 2472 10.0.2.15 22'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/vagrant'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1534955684.5509
+    'REQUEST_TIME' => 1534955684
+    'argv' => [
+        0 => 'yii'
+        1 => 'consoleGreatings'
+    ]
+    'argc' => 2
+]
+2018-08-26 07:21:53 [-][-][-][error][yii\console\Exception] yii\console\Exception: Missing required arguments: name in /app/vendor/yiisoft/yii2/console/Controller.php:186
+Stack trace:
+#0 /app/vendor/yiisoft/yii2/base/InlineAction.php(51): yii\console\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#2 /app/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('create', Array)
+#3 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('create', Array)
+#4 /app/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('migrate/create', Array)
+#5 /app/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('migrate/create', Array)
+#6 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#7 /app/yii(23): yii\base\Application->run()
+#8 {main}
+2018-08-26 07:21:53 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '13'
+    'TERM' => 'cygwin'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 45845 22'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'MAIL' => '/var/mail/vagrant'
+    'PATH' => '/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'PWD' => '/app'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LANGUAGE' => 'en_US:'
+    'LOGNAME' => 'vagrant'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 45845 10.0.2.15 22'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    '_' => '/usr/bin/php'
+    'OLDPWD' => '/home/vagrant'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1535268113.6617
+    'REQUEST_TIME' => 1535268113
+    'argv' => [
+        0 => 'yii'
+        1 => 'migrate/create'
+    ]
+    'argc' => 2
+]
+2018-08-28 18:15:08 [-][-][-][error][RuntimeException] RuntimeException: Failed to listen on "tcp://0.0.0.0:8080": Ñäåëàíà ïîïûòêà äîñòóïà ê ñîêåòó ìåòîäîì, çàïðåùåííûì ïðàâàìè äîñòóïà.
+ in D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\react\socket\src\TcpServer.php:164
+Stack trace:
+#0 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\react\socket\src\Server.php(36): React\Socket\TcpServer->__construct('tcp://0.0.0.0:8...', Object(React\EventLoop\StreamSelectLoop), Array)
+#1 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\cboden\ratchet\src\Ratchet\Server\IoServer.php(59): React\Socket\Server->__construct('0.0.0.0:8080', Object(React\EventLoop\StreamSelectLoop))
+#2 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\common\modules\chat\controllers\DaemonChatController.php(22): Ratchet\Server\IoServer::factory(Object(common\modules\chat\components\Chat), 8080)
+#3 [internal function]: common\modules\chat\controllers\DaemonChatController->actionIndex()
+#4 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\InlineAction.php(57): call_user_func_array(Array, Array)
+#5 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#6 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Controller.php(148): yii\base\Controller->runAction('', Array)
+#7 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Module.php(528): yii\console\Controller->runAction('', Array)
+#8 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(180): yii\base\Module->runAction('chat/daemon-cha...', Array)
+#9 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\console\Application.php(147): yii\console\Application->runAction('chat/daemon-cha...', Array)
+#10 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\vendor\yiisoft\yii2\base\Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#11 D:\KODING\_PROJECT_YII2_WITH_VARGANT_\yii2-app-advanced\yii(23): yii\base\Application->run()
+#12 {main}
+2018-08-28 18:15:08 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'ALLUSERSPROFILE' => 'C:\\ProgramData'
+    'APPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Roaming'
+    'CommonProgramFiles' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramFiles(x86)' => 'C:\\Program Files (x86)\\Common Files'
+    'CommonProgramW6432' => 'C:\\Program Files\\Common Files'
+    'COMPUTERNAME' => 'PC'
+    'ComSpec' => 'C:\\Windows\\system32\\cmd.exe'
+    'FP_NO_HOST_CHECK' => 'NO'
+    'HOMEDRIVE' => 'C:'
+    'HOMEPATH' => '\\Users\\ÀlleX'
+    'LOCALAPPDATA' => 'C:\\Users\\ÀlleX\\AppData\\Local'
+    'LOGONSERVER' => '\\\\PC'
+    'NUMBER_OF_PROCESSORS' => '8'
+    'OS' => 'Windows_NT'
+    'Path' => 'C:\\Program Files (x86)\\Intel\\iCLS Client\\;C:\\Program Files\\Intel\\iCLS Client\\;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\DAL;C:\\Program Files (x86)\\Intel\\Intel(R) Management Engine Components\\IPT;C:\\Program Files\\Intel\\Intel(R) Management Engine Components\\IPT;D:\\ÊÎÄÈÍÃ\\Brackets\\command;D:\\KODING\\NODE JS\\;C:\\xampp\\php;C:\\ProgramData\\ComposerSetup\\bin;D:\\KODING\\TortoiseGit\\bin;C:\\Program Files (x86)\\NVIDIA Corporation\\PhysX\\Common;G:\\Vagrant\\bin;D:\\KODING\\NODE JS\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\npm;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\bin;D:\\KODING\\Sublime Text Build 3126 x64\\tidy\\tidy;C:\\Users\\ÀlleX\\AppData\\Roaming\\Composer\\vendor\\squizlabs\\php_codesniffer\\bin;D:\\KODING\\PortableGit\\cmd;C:\\Users\\ÀlleX\\AppData\\Local\\GitHubDesktop\\bin;C:\\xampp\\perl\\lib\\IO\\Compress;G:\\Vagrant\\bin'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'PHP_COMMAND' => 'php.exe'
+    'PROCESSOR_ARCHITECTURE' => 'x86'
+    'PROCESSOR_ARCHITEW6432' => 'AMD64'
+    'PROCESSOR_IDENTIFIER' => 'Intel64 Family 6 Model 158 Stepping 9, GenuineIntel'
+    'PROCESSOR_LEVEL' => '6'
+    'PROCESSOR_REVISION' => '9e09'
+    'ProgramData' => 'C:\\ProgramData'
+    'ProgramFiles' => 'C:\\Program Files (x86)'
+    'ProgramFiles(x86)' => 'C:\\Program Files (x86)'
+    'ProgramW6432' => 'C:\\Program Files'
+    'PROMPT' => '$P$G'
+    'PSModulePath' => 'C:\\Windows\\system32\\WindowsPowerShell\\v1.0\\Modules\\'
+    'PUBLIC' => 'C:\\Users\\Public'
+    'SESSIONNAME' => 'Console'
+    'SystemDrive' => 'C:'
+    'SystemRoot' => 'C:\\Windows'
+    'TEMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'TMP' => 'C:\\Users\\LLEX~1\\AppData\\Local\\Temp'
+    'USERDOMAIN' => 'PC'
+    'USERNAME' => 'ÀlleX'
+    'USERPROFILE' => 'C:\\Users\\ÀlleX'
+    'VBOX_MSI_INSTALL_PATH' => 'G:\\VirtualBOX\\'
+    'windir' => 'C:\\Windows'
+    'windows_tracing_flags' => '3'
+    'YII_PATH' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\'
+    'PHP_SELF' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_NAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'SCRIPT_FILENAME' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'PATH_TRANSLATED' => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1535472908.892
+    'REQUEST_TIME' => 1535472908
+    'argv' => [
+        0 => 'D:\\KODING\\_PROJECT_YII2_WITH_VARGANT_\\yii2-app-advanced\\yii'
+        1 => 'chat/daemon-chat'
+    ]
+    'argc' => 2
+]
+2018-08-29 06:11:38 [-][-][-][error][Error] Error: Call to undefined method Ratchet\Server\IoServer::loop() in /app/common/modules/chat/controllers/DaemonChatController.php:25
+Stack trace:
+#0 [internal function]: common\modules\chat\controllers\DaemonChatController->actionIndex()
+#1 /app/vendor/yiisoft/yii2/base/InlineAction.php(57): call_user_func_array(Array, Array)
+#2 /app/vendor/yiisoft/yii2/base/Controller.php(157): yii\base\InlineAction->runWithParams(Array)
+#3 /app/vendor/yiisoft/yii2/console/Controller.php(148): yii\base\Controller->runAction('', Array)
+#4 /app/vendor/yiisoft/yii2/base/Module.php(528): yii\console\Controller->runAction('', Array)
+#5 /app/vendor/yiisoft/yii2/console/Application.php(180): yii\base\Module->runAction('chat/daemon-cha...', Array)
+#6 /app/vendor/yiisoft/yii2/console/Application.php(147): yii\console\Application->runAction('chat/daemon-cha...', Array)
+#7 /app/vendor/yiisoft/yii2/base/Application.php(386): yii\console\Application->handleRequest(Object(yii\console\Request))
+#8 /app/yii(23): yii\base\Application->run()
+#9 {main}
+2018-08-29 06:11:37 [-][-][-][info][application] $_GET = []
+
+$_POST = []
+
+$_FILES = []
+
+$_COOKIE = []
+
+$_SERVER = [
+    'XDG_SESSION_ID' => '11'
+    'TERM' => 'xterm'
+    'SHELL' => '/bin/bash'
+    'SSH_CLIENT' => '10.0.2.2 1649 22'
+    'OLDPWD' => '/home/vagrant'
+    'SSH_TTY' => '/dev/pts/0'
+    'USER' => 'vagrant'
+    'LS_COLORS' => 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'
+    'MAIL' => '/var/mail/vagrant'
+    'PATH' => '/home/vagrant/bin:/home/vagrant/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'
+    'PWD' => '/app'
+    'LANG' => 'en_US.UTF-8'
+    'SHLVL' => '1'
+    'HOME' => '/home/vagrant'
+    'LANGUAGE' => 'en_US:'
+    'LOGNAME' => 'vagrant'
+    'XDG_DATA_DIRS' => '/usr/local/share:/usr/share:/var/lib/snapd/desktop'
+    'SSH_CONNECTION' => '10.0.2.2 1649 10.0.2.15 22'
+    'LESSOPEN' => '| /usr/bin/lesspipe %s'
+    'XDG_RUNTIME_DIR' => '/run/user/1000'
+    'LESSCLOSE' => '/usr/bin/lesspipe %s %s'
+    '_' => '/usr/bin/php'
+    'PHP_SELF' => 'yii'
+    'SCRIPT_NAME' => 'yii'
+    'SCRIPT_FILENAME' => 'yii'
+    'PATH_TRANSLATED' => 'yii'
+    'DOCUMENT_ROOT' => ''
+    'REQUEST_TIME_FLOAT' => 1535523097.83
+    'REQUEST_TIME' => 1535523097
+    'argv' => [
+        0 => 'yii'
+        1 => 'chat/daemon-chat'
+    ]
+    'argc' => 2
+]
