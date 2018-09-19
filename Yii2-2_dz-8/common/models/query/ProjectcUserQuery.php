@@ -1,0 +1,38 @@
+<?php
+
+namespace common\models\query;
+
+/**
+ * This is the ActiveQuery class for [[\common\models\ProjectcUser]].
+ *
+ * @see \common\models\ProjectcUser
+ */
+class ProjectcUserQuery extends \yii\db\ActiveQuery
+{
+    public function byUser($userId, $role = null)
+    {
+        $this->andWhere(['user_id' => $userId]);
+        if ($role) {
+            $this->andWhere(['role' => $role]);
+        }
+        return $this;
+    }
+
+    /**
+     * {@inheritdoc}
+     * @return \common\models\ProjectcUser[]|array
+     */
+    public function all($db = null)
+    {
+        return parent::all($db);
+    }
+
+    /**
+     * {@inheritdoc}
+     * @return \common\models\ProjectcUser|array|null
+     */
+    public function one($db = null)
+    {
+        return parent::one($db);
+    }
+}
