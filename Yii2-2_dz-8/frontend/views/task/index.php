@@ -35,17 +35,39 @@ $this->params['breadcrumbs'][] = $this->title;
                 }
             ],
             'title',
-            // [
-            //     'attribute' => 'Title Task',
-            //     'value' => 'title',
-            // ],
             'description:ntext',
             'estimation',
-            'executor.username',
+            // 'executor.username',
+            ['attribute' => 'executor_id',
+                // 'label' => 'Executor',
+                'filter' => common\models\User::find()
+                    ->select('username')
+                    ->onlyActive()
+                    ->indexBy('id')
+                    ->column(),
+                'format' => 'html',
+                'value' => function ($model) {
+                    if ($model->executor) {
+                        return Html::a($model->executor->username, ['user/view', 'id' => $model->executor->id]);
+                    }
+                }
+            ],
             'started_at:datetime',
             'completed_at:datetime',
-            //'created_by',
-            //'updated_by',
+            // 'created_by',
+            [
+                'attribute' => 'created_by',
+                'format' => 'html',
+                'filter' => common\models\User::find()
+                    ->select('username')
+                    ->onlyActive()
+                    ->indexBy('id')
+                    ->column(),
+                'value' => function ($model) {
+                    return Html::a($model->creator->username, ['user/view', 'id' => $model->creator->id]);
+                }
+            ],
+            // 'updated_by',
             'created_at:datetime',
             'updated_at:datetime',
 
@@ -54,19 +76,21 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'take' => function ($url, \common\models\Task $model, $key) {
                         $icon = \yii\bootstrap\Html::icon('cloud-download');
-                        //if (Yii::$app->taskService->canTake($model, Yii::$app->user->identity)) {
+                        if (Yii::$app->taskService->canTake($model, Yii::$app->user->identity)) {
                             return Html::a($icon, ['task/take', 'id' => $model->id], ['data' => [
-                            'confirm' => 'Взять задачу?',
-                            'method' => 'post',
+                                'confirm' => 'Взять задачу?',
+                                'method' => 'post',
                             ]]);
-                        //}
+                        }
                     },
                     'complete' => function ($url, \common\models\Task $model, $key) {
                         $icon = \yii\bootstrap\Html::icon('cloud-upload');
-                        return Html::a($icon, ['task/complete', 'id' => $model->id], ['data' => [
-                        'confirm' => 'Завершить задачу?',
-                        'method' => 'post',
-                        ]]);
+                        if (Yii::$app->taskService->canCompele($model, Yii::$app->user->identity)) {
+                            return Html::a($icon, ['task/complete', 'id' => $model->id], ['data' => [
+                            'confirm' => 'Завершить задачу?',
+                            'method' => 'post',
+                            ]]);
+                        }
                     },
                 ],
                 'visibleButtons' => [

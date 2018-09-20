@@ -34,7 +34,11 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'password_hash',
             // 'password_reset_token',
             'email:email',
-            'status',
+            // 'status',
+            ['attribute' => 'status',
+                'filter' => \common\models\User::STATUSES,
+                'value' => \common\models\User::STATUSES[$model->status]
+            ],
             'created_at:datetime',
             'updated_at:datetime',
         ],

@@ -17,29 +17,40 @@ $this->params['breadcrumbs'][] = $this->title;
     <?php Pjax::begin(); ?>
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
-    <p>
-        <?= Html::a('Create Task', ['create'], ['class' => 'btn btn-success']) ?>
-    </p>
+    <!--<p>
+        <?= null // Html::a('Create Task', ['create'], ['class' => 'btn btn-success']) ?>
+    </p>-->
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-            ['class' => 'yii\grid\SerialColumn'],
+            // ['class' => 'yii\grid\SerialColumn'],
 
             'id',
+            // 'project_id',
+            [
+                'label' => 'Project',
+                'attribute' => 'project_id',
+                'format' => 'html',
+                'value' => function ($model) {
+                    return Html::a($model->project->title, ['project/view', 'id' => $model->project->id]);
+                }
+            ],
             'title',
             'description:ntext',
             'estimation',
             'executor_id',
-            //'started_at',
-            //'completed_at',
-            //'created_by',
-            //'updated_by',
-            //'created_at',
-            //'updated_at',
+            'started_at:datetime',
+            'completed_at:datetime',
+            'created_by',
+            'updated_by',
+            'created_at:datetime',
+            'updated_at:datetime',
 
-            ['class' => 'yii\grid\ActionColumn'],
+            ['class' => 'yii\grid\ActionColumn',
+                'template' => '{view}',
+            ],
         ],
     ]); ?>
     <?php Pjax::end(); ?>

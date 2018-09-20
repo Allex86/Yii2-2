@@ -93,7 +93,7 @@ class TaskController extends Controller
             // }
 
         $projects = \common\models\Project::find()
-        ->byUser(Yii::$app->user->id)
+        ->byUser(Yii::$app->user->id, \common\models\ProjectUser::ROLE_MANAGER)
         ->select('title')
         ->indexBy('id')
         ->column();
@@ -165,9 +165,11 @@ class TaskController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionTake($task, $user)
+    public function actionTake($id)
     {
-        Yii::$app->taskService->takeTask($task, $user);
+        $model = $this->findModel($id);
+
+        Yii::$app->taskService->takeTask($model, Yii::$app->user->identity);
 
         Yii::$app->session->setFlash('info', 'Take');
 
@@ -181,9 +183,11 @@ class TaskController extends Controller
      * @return mixed
      * @throws NotFoundHttpException if the model cannot be found
      */
-    public function actionComplete($task, $user)
+    public function actionComplete($id)
     {
-        Yii::$app->taskService->completeTask($task, $user);
+        $model = $this->findModel($id);
+
+        Yii::$app->taskService->completeTask($model, Yii::$app->user->identity);
 
         Yii::$app->session->setFlash('info', 'Complete');
 

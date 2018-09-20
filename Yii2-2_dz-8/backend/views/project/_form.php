@@ -38,7 +38,7 @@ use yii\bootstrap\ActiveForm;
         // https://github.com/unclead/yii2-multiple-input
         [
         'max'               => 10,
-        'min'               => 1, // should be at least 2 rows
+        'min'               => 0, // should be at least 2 rows
         'allowEmptyList'    => false,
         'enableGuessTitle'  => true,
         'addButtonPosition' => \unclead\multipleinput\MultipleInput::POS_HEADER,

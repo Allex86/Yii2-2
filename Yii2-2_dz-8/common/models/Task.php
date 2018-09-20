@@ -26,7 +26,6 @@ use yii\behaviors\BlameableBehavior;
  * @property User $createdBy
  * @property User $executor
  * @property User $updatedBy
- *
  * @property $project Project
  */
 class Task extends \yii\db\ActiveRecord
