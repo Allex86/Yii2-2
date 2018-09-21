@@ -185,10 +185,12 @@ class TaskController extends Controller
     public function actionTake($id)
     {
         $model = $this->findModel($id);
-
-        Yii::$app->taskService->takeTask($model, Yii::$app->user->identity);
-
-        Yii::$app->session->setFlash('info', 'Take');
+        
+        if (Yii::$app->taskService->takeTask($model, Yii::$app->user->identity)) {
+            Yii::$app->session->setFlash('info', 'Take');
+        } else {
+            Yii::$app->session->setFlash('info', 'Houston, we have a problem!');
+        }
 
         return $this->redirect(['index']);
     }
@@ -204,9 +206,11 @@ class TaskController extends Controller
     {
         $model = $this->findModel($id);
 
-        Yii::$app->taskService->completeTask($model, Yii::$app->user->identity);
-
-        Yii::$app->session->setFlash('info', 'Complete');
+        if (Yii::$app->taskService->completeTask($model, Yii::$app->user->identity)) {
+            Yii::$app->session->setFlash('info', 'Complete');
+        } else {
+            Yii::$app->session->setFlash('info', 'Houston, we have a problem!');
+        }
 
         return $this->redirect(['index']);
     }

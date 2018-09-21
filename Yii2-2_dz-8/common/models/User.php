@@ -34,6 +34,7 @@ class User extends ActiveRecord implements IdentityInterface
 
     const SCENARIO_ADMIN_CREATE = 'admin_create';
     const SCENARIO_ADMIN_UPDATE = 'admin_update';
+    const SCENARIO_USER_UPDATE = 'user_update';
 
 	 const STATUSES = [
 	 	self::STATUS_DELETED => 'удалён',
@@ -85,7 +86,7 @@ class User extends ActiveRecord implements IdentityInterface
             ['status', 'default', 'value' => self::STATUS_ACTIVE],
             ['status', 'in', 'range' => [self::STATUS_ACTIVE, self::STATUS_DELETED]],
 
-            ['username', UniqueValidator::className(), 'on' => [self::SCENARIO_ADMIN_CREATE, self::SCENARIO_ADMIN_UPDATE]],
+            ['username', UniqueValidator::className(), 'on' => [self::SCENARIO_ADMIN_CREATE, self::SCENARIO_ADMIN_UPDATE, self::SCENARIO_USER_UPDATE]],
             [['avatar'], 'file', 
             	'extensions' => ['jpg', 'jpeg', 'png'],
             	'minSize' => 1000,
@@ -95,7 +96,8 @@ class User extends ActiveRecord implements IdentityInterface
             ['password', 'string', 'min' => 6],
             ['email', 'email', 'on' => [self::SCENARIO_ADMIN_CREATE, self::SCENARIO_ADMIN_UPDATE]],
             [['username', 'email', 'password'], 'required', 'on' => self::SCENARIO_ADMIN_CREATE],
-            [['username', 'email', 'password'], 'required', 'on' => self::SCENARIO_ADMIN_UPDATE]
+            [['username', 'email', 'password'], 'required', 'on' => self::SCENARIO_ADMIN_UPDATE],
+            [['username'], 'required', 'on' => self::SCENARIO_USER_UPDATE]
         ];
     }
 

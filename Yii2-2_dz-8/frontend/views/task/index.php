@@ -69,27 +69,29 @@ $this->params['breadcrumbs'][] = $this->title;
                 'buttons' => [
                     'take' => function ($url, \common\models\Task $model, $key) {
                         $icon = \yii\bootstrap\Html::icon('cloud-download');
-                        if (Yii::$app->taskService->canTake($model, Yii::$app->user->identity)) {
-                            return Html::a($icon, ['task/take', 'id' => $model->id], ['data' => [
-                                'confirm' => 'Взять задачу?',
-                                'method' => 'post',
+                        return Html::a($icon, ['task/take', 'id' => $model->id], ['data' => [
+                            'confirm' => 'Взять задачу?',
+                            'method' => 'post',
                             ]]);
-                        }
                     },
                     'complete' => function ($url, \common\models\Task $model, $key) {
                         $icon = \yii\bootstrap\Html::icon('cloud-upload');
-                        if (Yii::$app->taskService->canCompele($model, Yii::$app->user->identity)) {
-                            return Html::a($icon, ['task/complete', 'id' => $model->id], ['data' => [
+                        return Html::a($icon, ['task/complete', 'id' => $model->id], ['data' => [
                             'confirm' => 'Завершить задачу?',
                             'method' => 'post',
                             ]]);
-                        }
                     },
                 ],
                 'visibleButtons' => [
-                            'update' => function (\common\models\Task $model, $key, $index) {
-                                return Yii::$app->taskService->canManage($model->project, Yii::$app->user->identity);
-                            },
+                    'take' => function (\common\models\Task $model, $key, $index) {
+                        return Yii::$app->taskService->canTake($model, Yii::$app->user->identity);
+                    },
+                    'complete' => function (\common\models\Task $model, $key, $index) {
+                        return Yii::$app->taskService->canCompele($model, Yii::$app->user->identity);
+                    },
+                    'update' => function (\common\models\Task $model, $key, $index) {
+                        return Yii::$app->taskService->canManage($model->project, Yii::$app->user->identity);
+                    },
                     'delete' => function (\common\models\Task $model, $key, $index) {
                         return Yii::$app->taskService->canManage($model->project, Yii::$app->user->identity);
                     },

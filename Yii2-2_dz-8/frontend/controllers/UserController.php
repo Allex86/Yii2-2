@@ -76,8 +76,12 @@ class UserController extends Controller
     public function actionProfile()
     {
         $model = $this->findModel(Yii::$app->user->id);
+        $model->setScenario(User::SCENARIO_USER_UPDATE);
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post()) && $model->save()) 
+        {
+                Yii::$app->session->setFlash('info', 'Updated');
+
             return $this->redirect(['view', 'id' => $model->id]);
         }
 
