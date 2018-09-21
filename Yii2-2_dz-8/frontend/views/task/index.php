@@ -30,6 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
                 'label' => 'Project',
                 'attribute' => 'project_id',
                 'format' => 'html',
+                'filter' => $filter_project_title,
                 'value' => function ($model) {
                     return Html::a($model->project->title, ['project/view', 'id' => $model->project->id]);
                 }
@@ -40,11 +41,7 @@ $this->params['breadcrumbs'][] = $this->title;
             // 'executor.username',
             ['attribute' => 'executor_id',
                 // 'label' => 'Executor',
-                'filter' => common\models\User::find()
-                    ->select('username')
-                    ->onlyActive()
-                    ->indexBy('id')
-                    ->column(),
+                'filter' => $filter_user_active,
                 'format' => 'html',
                 'value' => function ($model) {
                     if ($model->executor) {
@@ -58,11 +55,7 @@ $this->params['breadcrumbs'][] = $this->title;
             [
                 'attribute' => 'created_by',
                 'format' => 'html',
-                'filter' => common\models\User::find()
-                    ->select('username')
-                    ->onlyActive()
-                    ->indexBy('id')
-                    ->column(),
+                'filter' => $filter_user_active,
                 'value' => function ($model) {
                     return Html::a($model->creator->username, ['user/view', 'id' => $model->creator->id]);
                 }

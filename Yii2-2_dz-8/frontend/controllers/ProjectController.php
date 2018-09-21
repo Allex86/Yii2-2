@@ -24,6 +24,10 @@ class ProjectController extends Controller
         return [
             'access' => [
                 'class' => \yii\filters\AccessControl::className(),
+                'denyCallback' => function ($rule, $action) {
+                    Yii::$app->session->setFlash('info', 'Access denied!');
+                    $this->redirect(['/site/login']);
+                },
                 'rules' => [
                     [
                         'allow' => true,

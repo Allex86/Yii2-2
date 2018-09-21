@@ -22,6 +22,10 @@ class TaskController extends Controller
         return [
             'access' => [
                 'class' => \yii\filters\AccessControl::className(),
+                'denyCallback' => function ($rule, $action) {
+                    Yii::$app->session->setFlash('info', 'Access denied!');
+                    $this->redirect(['/site/login']);
+                },
                 'rules' => [
                     [
                         'allow' => true,
@@ -50,9 +54,22 @@ class TaskController extends Controller
         $query = $dataProvider->query;
         $query->byUser(Yii::$app->user->id);
 
+        $filter_user_active = \common\models\User::find()
+            ->select('username')
+            ->onlyActive()
+            ->indexBy('id')
+            ->column();
+
+        $filter_project_title = \common\models\Project::find()
+            ->select('title')
+            ->indexBy('id')
+            ->column();
+
         return $this->render('index', [
             'searchModel' => $searchModel,
             'dataProvider' => $dataProvider,
+            'filter_project_title' => $filter_project_title,
+            'filter_user_active' => $filter_user_active,
         ]);
     }
 
